@@ -28,7 +28,9 @@ class Cor(models.Model):
 
     def __str__(self):
         return self.descricao
-
+    
+    class Meta:
+        verbose_name_plural = "Cores"
 
 class Veiculo(models.Model):
     modelo = models.CharField(max_length=255, default='')
