@@ -22,7 +22,7 @@ class Acessorio(models.Model):
     def __str__(self):
         return self.descricao
     class Meta:
-        verbose_name = "Acessório"
+        verbose_name = "acessório"
 
 
 class Cor(models.Model):
@@ -32,7 +32,7 @@ class Cor(models.Model):
         return self.descricao
     
     class Meta:
-        verbose_name_plural = "Cores"
+        verbose_name_plural = "cores"
 
 class Veiculo(models.Model):
     modelo = models.CharField(max_length=255, default='')
@@ -52,4 +52,4 @@ class Veiculo(models.Model):
     def __str__(self):
         return f"{self.modelo} (Marca: {self.marca} - Ano: {self.ano} - Cor: {self.cor})"
     class Meta:
-        verbose_name = "Veículo"
+        verbose_name = "veículo"
