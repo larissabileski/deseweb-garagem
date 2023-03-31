@@ -21,6 +21,8 @@ class Acessorio(models.Model):
 
     def __str__(self):
         return self.descricao
+    class Meta:
+        verbose_name = "Acessório"
 
 
 class Cor(models.Model):
@@ -49,3 +51,5 @@ class Veiculo(models.Model):
 
     def __str__(self):
         return f"{self.modelo} (Marca: {self.marca} - Ano: {self.ano} - Cor: {self.cor})"
+    class Meta:
+        verbose_name = "Veículo"
