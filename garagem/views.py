@@ -9,6 +9,8 @@ from garagem.models import Acessorio
 from garagem.serializers import AcessorioSerializer
 from garagem.models import Cor
 from garagem.serializers import CorSerializer
+from garagem.models import Veiculo
+from garagem.serializers import VeiculoSerializer
 
 
 class CategoriaViewSet(ModelViewSet):
@@ -29,5 +31,10 @@ class AcessorioViewSet(ModelViewSet):
 class CorViewSet(ModelViewSet):
     queryset = Cor.objects.all()
     serializer_class = CorSerializer
+
+
+class VeiculoViewSet(ModelViewSet):
+    queryset = Veiculo.objects.all()
+    serializer_class = VeiculoSerializer
 
 
