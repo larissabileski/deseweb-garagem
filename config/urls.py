@@ -8,6 +8,10 @@ from garagem.views import MarcaViewSet
 from garagem.views import AcessorioViewSet
 from garagem.views import CorViewSet
 from garagem.views import VeiculoViewSet
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 router = DefaultRouter()
 router.register(r"categorias", CategoriaViewSet)
