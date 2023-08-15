@@ -2,15 +2,14 @@ from django.contrib import admin
 from django.urls import include, path
 
 from rest_framework.routers import DefaultRouter
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from garagem.views import CategoriaViewSet
-from garagem.views import MarcaViewSet
-from garagem.views import AcessorioViewSet
-from garagem.views import CorViewSet
-from garagem.views import VeiculoViewSet
-from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
-    TokenRefreshView,
+from garagem.views import (
+    AcessorioViewSet,
+    CategoriaViewSet,
+    CorViewSet,
+    MarcaViewSet,
+    VeiculoViewSet,
 )
 
 router = DefaultRouter()

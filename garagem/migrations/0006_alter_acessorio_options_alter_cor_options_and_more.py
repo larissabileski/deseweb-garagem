@@ -4,27 +4,26 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('garagem', '0005_veiculo_modelo_alter_veiculo_categoria_and_more'),
+        ("garagem", "0005_veiculo_modelo_alter_veiculo_categoria_and_more"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='acessorio',
-            options={'verbose_name': 'acessório'},
+            name="acessorio",
+            options={"verbose_name": "acessório"},
         ),
         migrations.AlterModelOptions(
-            name='cor',
-            options={'verbose_name_plural': 'cores'},
+            name="cor",
+            options={"verbose_name_plural": "cores"},
         ),
         migrations.AlterModelOptions(
-            name='veiculo',
-            options={'verbose_name': 'veículo'},
+            name="veiculo",
+            options={"verbose_name": "veículo"},
         ),
         migrations.AddField(
-            model_name='veiculo',
-            name='acessorios',
-            field=models.ManyToManyField(related_name='acessorios', to='garagem.acessorio'),
+            model_name="veiculo",
+            name="acessorios",
+            field=models.ManyToManyField(related_name="acessorios", to="garagem.acessorio"),
         ),
     ]
