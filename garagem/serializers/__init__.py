@@ -1,5 +1,13 @@
-from .marca import MarcaSerializer
-from .categoria import CategoriaSerializer
 from .acessorio import AcessorioSerializer
+
 from .cor import CorSerializer
-from .veiculo import VeiculoDetailSerializer, VeiculoSerializer, VeiculoListSerializer
+
+from .categoria import CategoriaSerializer
+
+from .marca import MarcaSerializer
+
+from .modelo import ModeloSerializer
+
+from .veiculo import VeiculoSerializer
+from .veiculo import VeiculoDetailSerializer
+from .veiculo import VeiculoListSerializer

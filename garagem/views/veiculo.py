@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from rest_framework.viewsets import ModelViewSet
 
-from garagem.models import Acessorio, Categoria, Cor, Marca, Veiculo
+from garagem.models import Veiculo
 from garagem.serializers import (
     VeiculoDetailSerializer,
     VeiculoListSerializer,
