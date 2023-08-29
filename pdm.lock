@@ -260,7 +260,7 @@ summary = "Implementation of RFC 6570 URI Templates"
 
 [metadata]
 lock_version = "4.1"
-content_hash = "sha256:7a22a8d0609a0b34aec1e45af582760152e03b10f5076555848d2d1caac90e03"
+content_hash = "sha256:afc98c680039844a87a26d85930debd69814586563edd17ce227da22540c7fa5"
 
 [metadata.files]
 "asgiref 3.7.2" = [
