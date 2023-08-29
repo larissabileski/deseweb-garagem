@@ -32,9 +32,10 @@ router.register(r"veiculos", VeiculoViewSet)
 router.register(r"modelos", ModeloViewSet)
 
 urlpatterns = [
+    path("", include(router.urls)),
     path("admin/", admin.site.urls),
-    path("api/", include(router.urls)),
-    # OpenAPI 3
+    path("api/", include(usuario_router.urls)),
+    path("api/media/", include(uploader_router.urls)),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
         "api/swagger/",
